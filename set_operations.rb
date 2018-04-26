@@ -1,6 +1,6 @@
 class SetOperations
     def self.union l1, l2
-        (l1 + l2).uniq.sort
+      l1 | l2
     end 
 
     def self.intersection l1, l2
@@ -8,7 +8,7 @@ class SetOperations
     end 
 
     def self.difference l1, l2
-        (l1 - l2).sort
+        l1 - l2
     end 
 
     def self.symmetric_difference l1, l2
